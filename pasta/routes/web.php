@@ -14,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-
-    return view("welcome");
-});
+     $prova = "ciao amore";
+     $prova2 = "saluti me?";
+     $numberCycles = 10;
+    return view("welcome", compact("prova","prova2","numberCycles"));
+})->name("10cicli");
+Route::get('/home20', function () {
+     $prova = "ciao amore";
+     $prova2 = "saluti me?";
+     $numberCycles = 20;
+    return view("welcome", compact("prova","prova2","numberCycles"));
+})->name("20cicli");

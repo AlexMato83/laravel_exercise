@@ -1,1 +1,6 @@
-<p>FOOTER , ciao sono il footer</p>
+<ul>
+  <li>ciao</li>
+  <li>sono</li>
+  <li>il</li>
+  <li>footer</li>
+</ul>

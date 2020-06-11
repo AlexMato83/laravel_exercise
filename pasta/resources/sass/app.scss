@@ -9,17 +9,18 @@
   align-items: center;
 }
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 header {
   @include flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 20%;
   background: grey;
   .navbar {
     @include flex;
+    justify-content: space-evenly;
     width: 100%;
     height: 30%;
   }
@@ -32,16 +33,27 @@ header {
 }
 main {
   @include flex;
+  flex-direction: column;
+  width: 100%;
 
-  width: 100vw;
-  height: 70%;
   background: #F0F8FF;
+  div {
+    @include flex;
+    flex-direction: column;
+  }
 }
 footer {
   @include flex;
 
-  width: 100vw;
+  width: 100%;
   height: 10%;
   background: black;
   color: white;
+  ul {
+    @include flex;
+    width: 100%;
+    li {
+      padding:30px;
+    }
+  }
 }

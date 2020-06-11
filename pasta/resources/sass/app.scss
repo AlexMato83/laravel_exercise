@@ -1,0 +1,47 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  @include flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 20%;
+  background: grey;
+  .navbar {
+    @include flex;
+    width: 100%;
+    height: 30%;
+  }
+  .titolo {
+    @include flex;
+    width: 100%;
+    height: 70%;
+    background-image: url("https://image.shutterstock.com/image-photo/food-drink-concept-various-uncooked-260nw-550652617.jpg");
+  }
+}
+main {
+  @include flex;
+
+  width: 100vw;
+  height: 70%;
+  background: #F0F8FF;
+}
+footer {
+  @include flex;
+
+  width: 100vw;
+  height: 10%;
+  background: black;
+  color: white;
+}

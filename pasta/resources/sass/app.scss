@@ -8,21 +8,48 @@
   justify-content: center;
   align-items: center;
 }
+@mixin listePasta {
+
+  background-image: url("https://magazine.misya.info/wp-content/uploads/2017/05/pasta-lunga.jpg");
+  @include flex;
+  flex-direction: column;
+  width: 100%;
+  background-size: contain;
+  div {
+    @include flex;
+    flex-direction: column;
+    img {
+      width: 500px;
+      }
+      &:first-child {
+        margin-top: 20px;
+      }
+  }
+}
+
 body {
   width: 100%;
   height: 100vh;
 }
 header {
+  position: fixed;
+  top: 0;
   @include flex;
   flex-direction: column;
   width: 100%;
-  height: 20%;
+  height: 180px;
   background: grey;
   .navbar {
     @include flex;
     justify-content: space-evenly;
     width: 100%;
     height: 30%;
+    a {
+      color:white;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 1px;
+    }
   }
   .titolo {
     @include flex;
@@ -31,23 +58,39 @@ header {
     background-image: url("https://image.shutterstock.com/image-photo/food-drink-concept-various-uncooked-260nw-550652617.jpg");
   }
 }
-main {
-  @include flex;
-  flex-direction: column;
-  width: 100%;
 
-  background: #F0F8FF;
-  div {
-    @include flex;
-    flex-direction: column;
-  }
+#pastaLunga {
+  @include listePasta;
+  background-image: url("https://magazine.misya.info/wp-content/uploads/2017/05/pasta-lunga.jpg");
 }
+
+#allPasta {
+  @include listePasta;
+  background-image: url("https://www.corriere.it/methode_image/2020/01/21/Salute/Foto%20Salute%20-%20Trattate/GettyImages-535767617-kp6E-U31601281583708ruB-593x443@Corriere-Web-Sezioni.jpg?v=202002061522");
+}
+
+main {
+
+  margin-top: 180px;
+  margin-bottom: 50px;
+  width: 100%;
+  .allPastaSelection {
+    img {
+      width: 500px;
+      }
+      &:first-child {
+        margin-top: 20px;
+      }
+    }
+}
+
 footer {
   @include flex;
-
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 10%;
-  background: black;
+  height: 50px;
+  background: grey;
   color: white;
   ul {
     @include flex;

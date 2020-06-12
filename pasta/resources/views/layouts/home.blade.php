@@ -26,7 +26,7 @@
      </header>
 
      <main>
-       @yield('main')
+         @yield('main')
      </main>
 
      <footer>

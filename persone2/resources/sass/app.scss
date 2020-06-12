@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header {
+  @include flex;
+  background: grey;
+  height: 180px;
+}
+main {
+  @include flex;
+  .persona {
+    width: 300px;
+    height: auto;
+    img {
+      width: 80%;
+      height: auto;
+    }
+  }
+  a {
+    padding: 20px;
+  }
+}
+footer {
+  @include flex;
+  background: grey;
+  height: 80px;
+}

@@ -10,12 +10,14 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 20%;
+  height: 180px;
   background: grey;
 }
 
@@ -28,6 +30,13 @@ header .navbar {
   height: 30%;
 }
 
+header .navbar a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 1px;
+}
+
 header .titolo {
   display: flex;
   justify-content: center;
@@ -37,29 +46,81 @@ header .titolo {
   background-image: url("https://image.shutterstock.com/image-photo/food-drink-concept-various-uncooked-260nw-550652617.jpg");
 }
 
-main {
+#pastaLunga {
+  background-image: url("https://magazine.misya.info/wp-content/uploads/2017/05/pasta-lunga.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  background: #F0F8FF;
+  background-size: contain;
+  background-image: url("https://magazine.misya.info/wp-content/uploads/2017/05/pasta-lunga.jpg");
 }
 
-main div {
+#pastaLunga div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#pastaLunga div img {
+  width: 500px;
+}
+
+#pastaLunga div:first-child {
+  margin-top: 20px;
+}
+
+#allPasta {
+  background-image: url("https://magazine.misya.info/wp-content/uploads/2017/05/pasta-lunga.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-size: contain;
+  background-image: url("https://www.corriere.it/methode_image/2020/01/21/Salute/Foto%20Salute%20-%20Trattate/GettyImages-535767617-kp6E-U31601281583708ruB-593x443@Corriere-Web-Sezioni.jpg?v=202002061522");
+}
+
+#allPasta div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#allPasta div img {
+  width: 500px;
+}
+
+#allPasta div:first-child {
+  margin-top: 20px;
+}
+
+main {
+  margin-top: 180px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+main .allPastaSelection img {
+  width: 500px;
+}
+
+main .allPastaSelection:first-child {
+  margin-top: 20px;
 }
 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 10%;
-  background: black;
+  height: 50px;
+  background: grey;
   color: white;
 }
 
